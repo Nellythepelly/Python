@@ -560,3 +560,17 @@ decoded_salaries = json.loads(new_salaries)
 print(decoded_salaries["Alfred"])
 print(decoded_salaries["Jane"])
 print(decoded_salaries["Me"])
+
+
+# Define the Vehicle class
+class Vehicle:
+    name = ""
+    kind = "car"
+    color = ""
+    value = 100.00
+    def description(self):
+        desc_str = "%s is a %s %s worth $%.2f." % (self.name, self.color, self.kind, self.value)
+        return desc_str
+
+# Print a list of all attributes of the Vehicle class.
+print(dir(Vehicle))
