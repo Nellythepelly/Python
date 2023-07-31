@@ -594,3 +594,12 @@ decoded_salaries = json.loads(new_salaries)
 print(decoded_salaries["Alfred"])
 print(decoded_salaries["Jane"])
 print(decoded_salaries["Me"])
+
+
+def multiplier_of(n):
+    def multiplier(number):
+        return number*n
+    return multiplier
+
+multiplywith5 = multiplier_of(5)
+print(multiplywith5(9))
